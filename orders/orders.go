@@ -14,6 +14,7 @@ type UpdateOrderParams struct {
 	NewStatus string `json:"new_status"`
 }
 
+
 //encore:api public method=POST path=/orders/update-status
 func UpdateOrderStatus(ctx context.Context, params *UpdateOrderParams) error {
 	// In a real implementation, you would update the order in a database
